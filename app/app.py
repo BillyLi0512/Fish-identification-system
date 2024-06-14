@@ -8,7 +8,7 @@ import streamlit as st                          # 构建Web应用
 
 
 # 获取 GitHub 访问令牌
-# github_token = st.secrets["GITHUB_TOKEN"]
+github_token = st.secrets["GITHUB_TOKEN"]
 
 
 
