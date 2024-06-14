@@ -21,7 +21,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown("""
     <style>
     .css-1d391kg {
-        padding-top: 0;
+        padding-bottom: 100;
     }
     </style>
     """, unsafe_allow_html=True)
