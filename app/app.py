@@ -17,7 +17,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 # 显示应用的标题文字
-st.header("鱼类识别系统的系统")
+st.header("鱼类识别系统")
 
 
 
