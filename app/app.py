@@ -4,20 +4,15 @@ import streamlit as st                          # 构建Web应用
 
 # streamlit run app/app.py
 
-
-
-# 设置页面配置，隐藏Streamlit菜单和页脚
-st.set_page_config(
-    page_title="Fish Identification System",
-    page_icon=":fish:",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-        'Get Help': None,
-        'Report a bug': None,
-        'About': None
-    }
-)
+# 使用HTML和CSS隐藏上标和注脚
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
