@@ -6,9 +6,25 @@ import streamlit as st                          # 构建Web应用
 
 
 
+# 设置页面配置，隐藏Streamlit菜单和页脚
+st.set_page_config(
+    page_title="Fish Identification System",
+    page_icon=":fish:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
+)
 
 # 获取 GitHub 访问令牌
 github_token = st.secrets["GITHUB_TOKEN"]
+
+
+# 获取 GitHub 访问令牌
+# github_token = st.secrets["GITHUB_TOKEN"]
 
 
 
