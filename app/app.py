@@ -4,21 +4,27 @@ import streamlit as st                          # 构建Web应用
 
 # streamlit run app/app.py
 
-# 使用HTML和CSS隐藏上标和注脚，包括 "Manage app" 按钮
+# 使用HTML和CSS隐藏上标（注脚不知道为啥去不掉）
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            .viewerBadge_container__1QSob {visibility: hidden;}
-            .viewerBadge_link__1S137 {visibility: hidden;}
-            .css-18e3th9 {padding-top: 0;}
-            .css-1d391kg {padding-top: 0;}
-            .css-hxt7ib {padding-top: 0;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+
+
+
+# 显示应用的标题文字，并调整其上边距
+st.markdown("""
+    <style>
+    .css-1d391kg {
+        padding-top: 0;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 
 # 显示应用的标题文字
